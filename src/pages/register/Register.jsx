@@ -42,7 +42,7 @@ const handleSubmit = async (e) => {
       region,
       password
     });
-    res.data && window.location.replace("https://test-front-mtfn.onrender.com/login")
+    res.data && window.location.replace("https://test-front-mtfn.onrender.com")
    
   }catch(err){
     setErr(true)

@@ -1,0 +1,19 @@
+.cardcollection-container{
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    /* width: 100%; */
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .flippycard{
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  
+  
+  

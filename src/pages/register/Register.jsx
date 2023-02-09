@@ -33,7 +33,7 @@ const handleSubmit = async (e) => {
   setErr(false)
   try{
     console.log(region)
-    const res = await axios.post("https://test-api-kqa6.onrender.com/auth/register",{
+    const res = await axios.post("https://test-api-kqa6.onrender.com/api/auth/register",{
       firstname,
       lastname,
       phoneNumber,
@@ -42,7 +42,7 @@ const handleSubmit = async (e) => {
       region,
       password
     });
-    res.data && window.location.replace("https://test-api-kqa6.onrender.com/login")
+    res.data && window.location.replace("https://test-front-mtfn.onrender.com/login")
    
   }catch(err){
     setErr(true)

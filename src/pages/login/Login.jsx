@@ -19,7 +19,7 @@ export default function Login() {
     dispatch({ type: "LOGIN_START" });
     // dispatch(LoginStart())
     try {
-      const res = await axios.post("/auth/login", {
+      const res = await axios.post("https://test-api-kqa6.onrender.com/api/auth/login", {
         phoneNumber: userRef.current.value,
         password: passRef.current.value,
       });

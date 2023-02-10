@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Logout } from '../../context/Actions';
 import { Context } from '../../context/Context';
 import './topbar.css'
+import logo from "../../assets/imgpost/logo.jpeg";
+
 // import booklover from '../../assets/images/booklover.jpg'
 
 
@@ -36,10 +38,11 @@ export default function TopBar() {
   return (
     <div className="top">
       <div className="topLeft">
-        <i className=" topIcon fa-brands fa-square-facebook"></i>
+      <span><img src={logo} alt=""/></span>
+        {/* <i className=" topIcon fa-brands fa-square-facebook"></i>
         <i className=" topIcon fa-brands fa-square-twitter"></i>
         <i className=" topIcon fa-brands fa-square-pinterest"></i>
-        <i className=" topIcon fa-brands fa-square-instagram"></i>
+        <i className=" topIcon fa-brands fa-square-instagram"></i> */}
       </div>
       <div  className={
           isNavExpanded ? "topCenter expanded" : "topCenter"

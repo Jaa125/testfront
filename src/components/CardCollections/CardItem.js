@@ -1,10 +1,10 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { BackSide, Flippy, FrontSide } from 'react-flippy'
-import backCard from "../../assets/imgpost/backcard.png";
+import backCard from "../../assets/imgpost/logo.jpeg";
 import imgpostt from "../../assets/imgpost/imgpostt.jpeg";
 import './card.css'
-function CardItem({ rows, columns,i,j,index, height, width,numberOf, fc, setFc}) {
+function CardItem({ rows, columns,i,j,index, height, width,numberOf, fc, setFc,link}) {
     const [itemflipped, setItemFlipped] = useState(false)
     const [success, setSuccess] = useState(false)
     const h = 35
@@ -41,6 +41,7 @@ const handleFButton = async () => {
 }
 
   return (
+    <a href={link && link.hasOwnProperty('url') && link.url} target="_blank">
     <Flippy 
     className="flippycard"
     isFlipped={itemflipped}
@@ -80,6 +81,7 @@ const handleFButton = async () => {
              
               </BackSide>
     </Flippy>
+    </a>
   )
 }
 

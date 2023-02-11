@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Logout } from '../../context/Actions';
 import { Context } from '../../context/Context';
 import './topbar.css'
-import logo from "../../assets/imgpost/logo.jpeg";
+import logo from "../../assets/imgpost/logo_low.png";
 
 // import booklover from '../../assets/images/booklover.jpg'
 

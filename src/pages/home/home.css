@@ -8,11 +8,10 @@
 @media screen and (max-width: 425px) {
   .puzzle-container {
       display: block;
-      width: 80px !important;
+      width:100%;
 
        }
 }
-
 /* 
 .puzzle-piece {
     position: relative;

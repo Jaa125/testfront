@@ -26,7 +26,7 @@ function Home () {
    
 
   return (
-    <div className="puzzle-container" style={{margin :"10px 10px"}}>
+    <div className="puzzle-container" style={{margin :"10px 10px", marginTop:"70px"}}>
    <CardCollection />
    </div>
   );

@@ -7,16 +7,16 @@ function CardCollection() {
   const [numberOf, setNumberOfPieces] = useState(100);
 
   const cards = [];
-  const fbLinks = [
-    {url:"https://instagram.com/soussepalace.shdt?igshid=YmMyMTA2M2Y="},
-  { url:"https://instagram.com/hannibalpark_sousse?igshid=YmMyMTA2M2Y="},
-{url:"https://instagram.com/hannibalpark_sousse?igshid=YmMyMTA2M2Y="},
+  const fbLinks = [{url:"https://instagram.com/soussepalace.shdt?igshid=YmMyMTA2M2Y="},
+   { url:"https://instagram.com/hannibalpark_sousse?igshid=YmMyMTA2M2Y="},
 {url:"https://instagram.com/link_voyages?igshid=YmMyMTA2M2Y="},
 {url:"https://instagram.com/traveltodo?igshid=YmMyMTA2M2Y="},
 {url:"https://instagram.com/lella_fatouma?igshid=YmMyMTA2M2Y="},
+
 {url:"https://instagram.com/le_salon_feryel_gharbi?igshid=YmMyMTA2M2Y="},
 {url:"https://instagram.com/salon_mehdilaatiri_officiel?igshid=YmMyMTA2M2Y="},
 {url:"https://instagram.com/thesaloon.sousse?igshid=YmMyMTA2M2Y="},
+
 {url:"https://instagram.com/danmark.cafe?igshid=YmMyMTA2M2Y="},
 {url:"https://instagram.com/myway_restolounge?igshid=YmMyMTA2M2Y="}
 
@@ -26,7 +26,15 @@ function CardCollection() {
   const [fc, setFc] = useState([]);
 
   useEffect(() => {
-    
+    // let tempRows = Math.ceil(Math.sqrt(numberOf));
+    // if (numberOf % tempRows !== 0) {
+    //   setRows(tempRows);
+    //   setColumns(tempRows);
+    // }else {
+    //   let ceil = Math.ceil(tempRows);
+    //   setRows(ceil);
+    //   setColumns(Math.floor(numberOf / ceil));
+    // }
   
     
       let root = Math.sqrt(numberOf);
@@ -73,19 +81,7 @@ function CardCollection() {
   }
   return (
     <div className="cardcollection-container">
-      {/* <form className="formcard">
-        <label htmlFor="pieces">Enter the number of pieces:</label>
-        <input
-          type="number"
-          id="pieces"
-          name="pieces"
-          value={numberOf}
-          onChange={(e) => setNumberOfPieces(e.target.value)}
-        />
-        <p>
-          Rows: {rows} Columns: {columns}
-        </p>
-      </form> */}
+     
       <div
       className="homepagecss"
         style={{
@@ -95,7 +91,11 @@ function CardCollection() {
         }}
       >
         {cards.map((card, index) => (
-          <div key={index}> {card} </div>
+         
+          
+            <div key={index} > {card} </div>
+
+         
         ))}
       </div>
     </div>

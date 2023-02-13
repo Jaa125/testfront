@@ -42,7 +42,7 @@ export default function Login() {
         <label >Mot de passe</label>
         <input type="password" className="loginInput" placeholder="Entrer votre Mot de passe" ref={passRef} />
         <button className="loginButton" type="submit" disabled={isFetching}>Login</button>
-        <button className="loginRegisterButton"><Link className="link" to="/register">Register  </Link></button>
+        <button className="loginRegisterButton"><Link className="link" to="https://test-api-kqa6.onrender.com/register">Register  </Link></button>
       </form>
 
       

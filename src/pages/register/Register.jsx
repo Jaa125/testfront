@@ -95,7 +95,7 @@ const handleSubmit = async (e) => {
           </div>
           
             <button className="registerButton" disabled={isFetching} type="submit">register</button>
-            <button className="registerLoginButton">  <Link className="link" to="/login">Login</Link></button>
+            {/* <button className="registerLoginButton">  <Link className="link" to="/login">Login</Link></button> */}
       
         </form>
        

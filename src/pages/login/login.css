@@ -27,6 +27,7 @@ flex-direction: column;
 
 .loginButton{
     margin-top: 20px;
+    margin-bottom: 20px;
     background-color: lightcoral;
     cursor: pointer;
     border: none;
